@@ -1,16 +1,14 @@
-# fastapi-template-service
+# coppel-search-service
 
 <p align="center">
-    <em>A template for FastAPI applications</em>
+    <em>A service that allows searches on Marvel API</em>
 </p>
 
 ---
 
 ### About
 
-**fastapi-template-service** is a base project for FastAPI applications.
-
-The main purpose is to have a base code already working and it allows to you generate APIs faster than begin from scratch. It will require minimal changes for run yours new application based on your API's requirements .
+**coppel-search-service** A service that allows searches on Marvel API.
 
 ---
 
@@ -22,7 +20,6 @@ If you want to run the project on Docker, first you should have some application
 docker
 docker-compose
 Poetry
-dbmate
 ```
 
 ```bash
@@ -65,23 +62,12 @@ poetry shell
 poetry install
 ```
 
-3. Don't forget to run the [migrations](#migrations) and start the project:
-
 ```bash
 uvicorn app.main:app --reload
 ```
 
 ---
 
-## Running the tests
-
-### Local environment
-
-```bash
-pytest -v /tests
-```
-
----
 
 ## Running the Pre-Commit tool
 
@@ -120,38 +106,11 @@ Run in your terminal
 ```bash
 cz commit
 ```
-## <a name="migrations"></a> Migrations
-
-We use [DbMate](https://github.com/amacneil/dbmate), Refer to DBMate's documentation for any doubts on usage.
-
-### Install dbmate
-
-```bash
-brew install dbmate
-```
-
-### New migration
-
-to create a new migration just run
-
-```bash
-dbmate new <migration_name>
-```
-
-### Run migrations
-
-to run all pending migrations type
-
-```bash
-dbmate up
-```
 
 ---
 
 ## Built With
 
 - [FastAPI](https://fastapi.tiangolo.com/) - Modern, fast, web framework for building APIs with Python 3.9+
-- [PostgreSQL](https://www.postgresql.org/) - The World's Most Advanced Open Source Relational Database
-- [DbMate](https://github.com/amacneil/dbmate) - A lightweight, framework-agnostic database migration tool.
 
 ---
