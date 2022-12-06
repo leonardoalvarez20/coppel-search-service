@@ -9,12 +9,12 @@ services:
       context: .
       dockerfile: .docker/dockerfile
     image: coppel-search-service_app
-    command: uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+    command: uvicorn app.main:app --reload --host 0.0.0.0 --port 8001
     volumes:
       - .:/app
     env_file:
       - .env
     ports:
-      - 8000:8000
+      - 8001:8001
     networks:
       - app-net
